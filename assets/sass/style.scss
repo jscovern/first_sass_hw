@@ -1,0 +1,55 @@
+@import 'variables';
+
+h1 {
+	color: red;
+	font-size: $standardFontPx*2;
+}
+
+div {
+	background-color: gray;
+	font-size: $standardFontPx*1.5;
+}
+
+div.test1 {
+	background-color: black;
+	color: white;
+}
+
+div.test2 {
+	font-weight: bold;
+	background-color: green;
+
+	ol li:first-child {
+		color: blue;
+	}
+
+	ol li:nth-child(3) {
+		color: $thirdChildColor;
+	}
+
+	ol li {
+		list-style: disc;
+		color: gray;
+	}
+
+}
+
+@mixin transition-background-color ($seconds) {
+	-webkit-transition: background-color $seconds;
+	transition: background-color $seconds;
+}
+
+div.test1 p {
+	color: blue;
+	background-color: white;
+	font-size: $standardFontPx;
+
+	&:hover {
+		color: red;
+		text-decoration: underline;
+		cursor: pointer;
+		background-color: black;
+		@include transition-background-color(3s);
+	}
+}
+

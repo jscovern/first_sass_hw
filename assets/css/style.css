@@ -1,3 +1,36 @@
 h1 {
-	background-color: gray;	
-}
+  color: red;
+  font-size: 28px; }
+
+div {
+  background-color: gray;
+  font-size: 21px; }
+
+div.test1 {
+  background-color: black;
+  color: white; }
+
+div.test2 {
+  font-weight: bold;
+  background-color: green; }
+  div.test2 ol li:first-child {
+    color: blue; }
+  div.test2 ol li:nth-child(3) {
+    color: red; }
+  div.test2 ol li {
+    list-style: disc;
+    color: gray; }
+
+div.test1 p {
+  color: blue;
+  background-color: white;
+  font-size: 14px; }
+  div.test1 p:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: black;
+    -webkit-transition: background-color 3s;
+    transition: background-color 3s; }
+
+/*# sourceMappingURL=style.css.map */
